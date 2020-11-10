@@ -6,6 +6,9 @@ app.set('view engine', 'ejs');
 
 //express.render() cerca il file già nelle views
 var fakeApi= () => 'Faker'
+//views
+
+//Home
 app.get('/', function(req, res) {
     var proPlayer=fakeApi();
     res.render('pages/index',
@@ -13,7 +16,7 @@ app.get('/', function(req, res) {
 )}
 );
 
-
+//Other
 app.get('/other', function(req, res) {
     res.render('pages/other',);
 });
