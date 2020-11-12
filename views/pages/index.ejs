@@ -10,7 +10,7 @@
 
 <body class="container justify-content-center">
 
-<%- include('../partials/header.ejs'); %>
+<%- include('../partials/header.ejs',{data:data}); %>
 <div style="background: url(https://i.postimg.cc/3N7wnb75/background.jpg)" class="jumbotron bg-cover text-white">
     <div class="container py-5 text-center">
         <h1 class="display-4 font-weight-bold">LEAGUE OF LEGENDS</h1>
@@ -34,6 +34,8 @@
     <h2> ProPlayer </h2>
     <%= proPlayer%>
 </p>
+<%= data%>
+
 
 <%- include('../partials/footer.ejs'); %> 
 </body>

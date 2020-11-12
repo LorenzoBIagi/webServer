@@ -1,11 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">EJS Templating</a>
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/other">Other</a>
-      </li>
+          <% data.menu.forEach((date)=>{ %>
+            <% if(date.url==data.url){ %>
+                <li class="nav-item"> 
+                    <a class="nav-link active" href="<%=date.url%>"> <%= date.name%> </a>
+                </li>
+            <%} else {%>
+
+                <li class="nav-item"> 
+                    <a class="nav-link" href="<%=date.url%>"> <%= date.name%> </a>
+                </li>
+
+            <%}%>
+                
+        <% }) %>    
+        
     </ul>
   </nav>
+
+
+
+<!--
+
+  
+-->
