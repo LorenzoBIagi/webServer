@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>EJS Templating</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
+
+<%- include('../partials/head.ejs',{data:data}); %>
+
 <body class="container">
 <%- include('../partials/header.ejs'); %>
 <div style="background: url(https://cdn2.wanderlust.co.uk/media/1028/cropped-shutterstock_497799013.jpg?anchor=center&mode=crop&width=1200&height=0&rnd=131915974290000000)" class="jumbotron bg-cover text-white">
