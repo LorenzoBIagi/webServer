@@ -1,0 +1,17 @@
+<div class="container py-5 text-center">
+    <h1 class="display-4 font-weight-bold">LEAGUE OF LEGENDS</h1>
+    <p class="font-italic mb-0">
+        <% data.menu.forEach(date => { %>
+            <% if (date.url===data.url) { %>
+                <%= date.content %> 
+            <% } %>
+        <% }) %>
+    </p>
+    <p class="font-italic">Portfolio by
+        <a href="https://github.com/LorenzoBiagi" class="text-white">
+            <u>Lorenzo Biagi</u>
+        </a>
+    </p>
+    <a href="#" role="button" class="btn btn-primary px-5"> 
+    </a>
+</div>

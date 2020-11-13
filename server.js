@@ -9,13 +9,15 @@ const menu =[
     {
         name:'Home',
         url:'/',
+        content:'Here you can explore and discover my favourite champions and explore my gaming style!'
     },
     {
         name:'Other',
         url:'/other',
+        content:''
     },
 ]
-//express.render() cerca il file già nelle views
+
 var fakeApi= () => 'Faker'
 //views
 
@@ -30,7 +32,7 @@ app.get('/', function(req, res) {
 
     var proPlayer=fakeApi();
 
-    
+    //express.render() cerca il file già nelle views
     res.render('pages/index',
     {
     data:data,
@@ -55,6 +57,7 @@ app.get('/other', function(req, res) {
     
 
 });
+
 var port=8080
 
 app.listen(port);
