@@ -14,7 +14,7 @@ const menu =[
     {
         name:'Other',
         url:'/other',
-        content:''
+        content:'That\'s the content of other\'s page, have fun'
     },
 ]
 
