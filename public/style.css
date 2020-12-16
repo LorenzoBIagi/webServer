@@ -1,0 +1,78 @@
+
+.champions {
+    counter-reset: index;  
+    padding: 0;
+    max-width: 300px;
+  }
+  
+ 
+  .champion {
+    counter-increment: index; 
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+  }
+  
+  
+ 
+.champion::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, rgb(13, 20, 48) ,rgb(133, 127, 255));
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+ 
+  li + li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .highlight-word {
+    position: relative;
+    z-index: 0;
+  /* prevent the highlight from breaking since it is horizontal   */
+    white-space: nowrap;
+  }
+  .highlight-word:before {
+      content: '';
+      background: url(https://cdn2.hubspot.net/hubfs/1951809/text-highlight.png?t=1542708765973) no-repeat center center;
+      background-size: 100% auto;
+      width: 108%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      transform: translate(-3%,0);
+  }
+.land{
+    background-color: rgba(255,255,255,0.2)!important;
+}
+.land p{
+    padding-top: .5rem;
+}
+.ntitle{
+    font-size: 1.5rem;
+}
+.nlink{
+    font-size: 1.1rem;
+}
+.navbar{
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.img-fluid{
+    border-radius: 1rem;
+    box-shadow: 4px 1px 29px -9px #000000;
+}
+
+  

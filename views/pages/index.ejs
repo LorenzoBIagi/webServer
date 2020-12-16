@@ -8,17 +8,35 @@
 <div style="background: url(https://i.postimg.cc/3N7wnb75/background.jpg)" class="jumbotron bg-cover text-white">
     <%- include('../partials/landing.ejs',{data:data}); %> 
 </div>
-
-
-<div class="content justify-content-center">
-    <%- include('../partials/lovedChampions.ejs'); %>
-    <%- include('../partials/hatedChampions.ejs'); %> 
-        
+<div class="jumbotron land">
+    <div class="container land text-center text-lg-left">
+      
+      <div class="row">
+        <div class="col-lg-8">
+            <h1 class="display-4">Landing page of my
+                <span class="highlight-word">EJS PORTFOLIO</span>
+            </h1>
+    <p class="lead">This is a simple example, a short view of my favourite champions and of my gaming style in this beautiful game.</p>
+          <span class="text-center d-inline-block">
+            <a class="btn btn-light btn-lg w-100" href="other" role="button">Let's See</a>
+          <p class="text-muted">No credit card required</p>
+          </span>
+          
+        </div>
+        <div class="col-lg-4 align-items-center d-flex">
+          <img src="https://www.wallpapertip.com/wmimgs/82-825674_league-of-legends-season-9.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+  
+   
+      </div>
 </div>
+
 <p>
     <h2> ProPlayer </h2>
-    <%= proPlayer%>
+    <%= proPlayer%>  
 </p>
+ 
 
 
 

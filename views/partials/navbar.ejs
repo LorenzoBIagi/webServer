@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">EJS Templating</a>
+    <a class="navbar-brand ntitle" href="/">EJS Templating</a>
     <ul class="navbar-nav mr-auto">
           <% data.menu.forEach((date)=>{ %>
             <% if(date.url==data.url){ %>
                 <li class="nav-item"> 
-                    <a class="nav-link active" href="<%=date.url%>"> <%= date.name%> </a>
+                    <a class="nav-link active nlink" href="<%=date.url%>"> <%= date.name%> </a>
                 </li>
             <%} else {%>
 
                 <li class="nav-item"> 
-                    <a class="nav-link" href="<%=date.url%>"> <%= date.name%> </a>
+                    <a class="nav-link nlink" href="<%=date.url%>"> <%= date.name%> </a>
                 </li>
 
             <%}%>

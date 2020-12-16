@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head.ejs',{data:data}); %>
+
+<body class="container">
+<%- include('../partials/navbar.ejs'); %>
+<div style="background: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/9112b576009313.5c5ca8e8c45c3.jpg)" class="jumbotron bg-cover text-white">
+    <%- include('../partials/landing.ejs',{data:data}); %>
+</div>
+<div class="content">
+    <div class="content justify-content-center">
+        <%- include('../partials/lovedChampions.ejs',{champions:data.champions}); %> 
+        <%- include('../partials/hatedChampions.ejs',{champions:data.champions}); %> 
+            
+    </div>
+ 
+        
+</div>
+
+<%- include('../partials/footer.ejs'); %> 
+
+</body>
+</html>
